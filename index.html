@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>oscars</title>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libraries/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="libraries/softfloat.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+
+    <script type="text/javascript">
+
+      $( document ).ready(function() {
+
+        for(var i=0; i < 43; i++){
+          var titlebox = "<h3 id='t" + i + "'></h3>";
+          var budgetbox = "<h4 id='b" + i + "'></h4>";
+          var yearbox = "<h5 id='y" + i + "'></h5>";
+          $(".titlestring").append(titlebox);
+          $(".budgetstring").append(budgetbox);
+          $(".yearstring").append(yearbox);
+        }
+
+      });
+
+    </script>
+
+  </head>
+  <body bgcolor='#000000'>
+  <div class="footer">
+    <div class = "yearstring"></div> 
+    <div class = "budgetstring"></div>
+    <div class = "titlestring"></div>
+  </div>
+  <div class="header">
+    <h1></h1>
+    <h2></h2>
+  </div>
+
+}  </body>
+</html>
